@@ -23,7 +23,7 @@ services:
     init: True
     working_dir: /code
     command: >
-      /bin/sh -c "yarn"
+      /bin/sh -c "yarn; yarn serve"
     volumes:
       - ./frontend:/code
     ports:
